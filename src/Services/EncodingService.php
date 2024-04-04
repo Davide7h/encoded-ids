@@ -10,7 +10,7 @@ class EncodingService
     {
         $alphabet = config('encoded-ids.alphabet');
         $padding = config('encoded-ids.padding');
-        $decoder = new Sqids($alphabet, 8);
+        $decoder = new Sqids($alphabet, $padding);
 
         return $decoder;
     }
