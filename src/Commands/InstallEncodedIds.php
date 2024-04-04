@@ -20,8 +20,8 @@ class InstallEncodedIds extends Command
                 $this->info('The existing files will not be overwritten. Everything will continue working as usual.');
                 return;
             } 
-            require_once(__DIR__ . '/../../generate-alphabet.php');
-            $this->call('vendor:publish', ['--tag' => 'config', '--provider' => 'Davide7h\EncodedIds\Providers\EncodedIdsProvider', '--force' => true]);
         }
+        require_once(__DIR__ . '/../../generate-alphabet.php');
+        $this->call('vendor:publish', ['--tag' => 'config', '--provider' => 'Davide7h\EncodedIds\Providers\EncodedIdsProvider', '--force' => true]);
     }
 }
