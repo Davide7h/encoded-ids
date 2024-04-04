@@ -1,0 +1,31 @@
+{
+    "name": "davide7h/encoded-ids",
+    "description": "A package that provides a HasEncodedId Trait to add to your Models in order to have a convenient way to mask your IDs when exposing them in routes or other scenarios when you don't want the user to see the Iactual ID of your database records",
+    "version": "1.0.0",
+    "type": "library",
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^8.0|^9.0|^10.0",
+        "sqids/sqids": "^0.4.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Davide7h\\EncodedIds\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Davide Romeo",
+            "email": "davide7h@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Davide7h\\EncodedIds\\Providers\\EncodedIdsProvider"
+            ]
+        }
+    }
+}
