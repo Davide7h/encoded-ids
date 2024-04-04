@@ -1,7 +1,7 @@
 {
     "name": "davide7h/encoded-ids",
     "description": "A package that provides a HasEncodedId Trait to add to your Models in order to have a convenient way to mask your IDs when exposing them in routes or other scenarios when you don't want the user to see the Iactual ID of your database records",
-    "version": "1.0.2",
+    "version": "1.0.4",
     "type": "library",
     "require": {
         "php": "^8.1",
