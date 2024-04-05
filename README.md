@@ -4,9 +4,9 @@
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![Stability](https://img.shields.io/badge/Framework-Laravel-red.svg
 )](https://getcomposer.org/doc/04-schema.md#minimum-stability)
-[![Latest Version](https://img.shields.io/badge/Latest_Version-1.0.5-ffed00.svg
+[![Latest Version](https://img.shields.io/badge/Latest_Version-1.0.6-ffed00.svg
 )](https://getcomposer.org/doc/04-schema.md#minimum-stability)
-[![Stability](https://img.shields.io/badge/Min_Stability-dev-blue.svg
+[![Stability](https://img.shields.io/badge/Min_Stability-alpha-blue.svg
 )](https://getcomposer.org/doc/04-schema.md#minimum-stability)
 
 ## Documentation, Installation, and Usage Instructions
@@ -75,7 +75,7 @@ echo $user->encoded_id; //example output: "ULwu08NB"
 ```
 ### Retrieving Models
 The package provides a convenient way to query the Database for records using the ```encoded_id``` attribute, without any need for decoding it. Just call the ```find``` or ```findOrFail``` methods on your model's class, like you would normally do using the acutal (numeric) IDs for your records as parameters, but with the option to also use their masked version (as a string):
-```
+```php
 User::find(1)          //returns the User model with ID = 1;
 User::find("ULwu08NB") //also returns the User with ID = 1;
 ```
